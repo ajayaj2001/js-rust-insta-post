@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "8455d985-133b-4776-af3e-be0ed5a6ae13",
+		"name": "rest-api-node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "creatpost",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmNTNjZWE2NjQ0NmQ1MzViNGJmZjE1MSJ9.J_STanHsw-N-1vxVk0QUH4w00T7u4CQKLlUXi3Z2oZM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "post from guest3",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Ajay/Pictures/Screenshots/Screenshot (1).png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/post",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "index.post",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmNTNjZTllNjQ0NmQ1MzViNGJmZjE1MCJ9.yANG24PRITDQ9nwtgB9x_3UBkk6iPVoLzggbPyI4JlE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/post",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show post",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmNTI1ZTIxMWVlMWVjMmQ5YzBjMzQxYSJ9.DVcf6ntFm7aMr_LE8RoobP8ZhZgk4rDyA9ffYx3iYCg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/post/5f5277633bc2d21b944af9c0",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"5f5277633bc2d21b944af9c0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletepost",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmNTI1ZTIxMWVlMWVjMmQ5YzBjMzQxYSJ9.DVcf6ntFm7aMr_LE8RoobP8ZhZgk4rDyA9ffYx3iYCg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/post/5f4e88746455b0188c233c2b",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"5f4e88746455b0188c233c2b"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePost",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmNTI1ZTIxMWVlMWVjMmQ5YzBjMzQxYSJ9.DVcf6ntFm7aMr_LE8RoobP8ZhZgk4rDyA9ffYx3iYCg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"my first post update\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/post/5f5277633bc2d21b944af9c0",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"5f5277633bc2d21b944af9c0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my auth",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmNTI1ZTIxMWVlMWVjMmQ5YzBjMzQxYSJ9.DVcf6ntFm7aMr_LE8RoobP8ZhZgk4rDyA9ffYx3iYCg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/auth/me",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"guest2@email.com\",\r\n    \"password\":\"mypassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"guest3\",\r\n    \"email\":\"guest3@email.com\",\r\n    \"password\":\"mypassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "follow",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmNTNjZThlNjQ0NmQ1MzViNGJmZjE0ZiJ9.W9DhaEoJyk8bXyt7BDJS86EA0mxfoXtHJk_eO3D4sOw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/follow/5f53ce9e6446d535b4bff150",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"follow",
+						"5f53ce9e6446d535b4bff150"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
