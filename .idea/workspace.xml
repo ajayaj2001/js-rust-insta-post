@@ -22,9 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bea18eca-61c5-4275-9576-6b4e7fa10f98" name="Default Changelist" comment="Added logs">
+    <list default="true" id="bea18eca-61c5-4275-9576-6b4e7fa10f98" name="Default Changelist" comment="Fixed typo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/redis.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/redis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/passportJWT.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/passportJWT.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +44,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -81,7 +83,7 @@
       <workItem from="1599500317520" duration="2791000" />
       <workItem from="1599580257672" duration="1889000" />
       <workItem from="1599668837403" duration="4501000" />
-      <workItem from="1599750940594" duration="2715000" />
+      <workItem from="1599750940594" duration="6456000" />
     </task>
     <task id="LOCAL-00001" summary="Added logs">
       <created>1599752584756</created>
@@ -97,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599752766297</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed typo">
+      <created>1599753681390</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599753681390</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +125,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added logs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added logs" />
+    <MESSAGE value="Fixed typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed typo" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1345" height="222" key="GridCell.Tab.0.bottom" timestamp="1599673909985">
@@ -135,17 +145,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="222" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599673909985" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1599752768892">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1599753684058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599752768892" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599753684058" />
     <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1599752428846">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1599752428846" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599413762339">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599755569938">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599413762339" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599755569938" />
   </component>
 </project>
