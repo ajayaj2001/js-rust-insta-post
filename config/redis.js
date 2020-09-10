@@ -9,7 +9,7 @@ module.exports={
     getClient:()=>{
         if(!client){
             redisConfig={
-                host:config.redisHOST,
+                host:config.redisHost,
                 port:config.redisPORT
             };
             if(process.env.NODE_ENV=="production"){
